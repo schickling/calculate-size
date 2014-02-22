@@ -11,8 +11,8 @@ $ bower install calculate-size
 
 ```js
 var size = calculateSize("Hello world!", {
-   font: "Arial",
-   fontSize: 12
+   font: 'Arial',
+   fontSize: '12px'
 });
 
 console.log(size.width); // 140
