@@ -15,7 +15,7 @@ casper.start(url, function() {
   casper.test.comment('test one word');
   var size = this.calculateSize("Hello");
   this.test.assertEquals(size.width, 35);
-  this.test.assertEquals(size.height, 18);
+  this.test.assertEquals(size.height, 16);
 });
 
 // TODO write test span is invisible
