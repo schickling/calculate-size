@@ -1,4 +1,4 @@
-calculate-size
+calculate-size [![Build Status](https://travis-ci.org/schickling/calculate-size.png?branch=master)](https://travis-ci.org/schickling/calculate-size)
 ==============
 
 ## Install
