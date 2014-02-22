@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/schickling/calculate-size/issues"
   },
-  "homepage": "https://github.com/schickling/calculate-size"
+  "homepage": "https://github.com/schickling/calculate-size",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-casper": "~0.2.3",
+    "grunt-contrib-connect": "~0.7.0",
+    "load-grunt-tasks": "~0.3.0",
+    "casperjs": "~1.1.0-beta3",
+    "phantomjs": "~1.9.7-1"
+  }
 }
