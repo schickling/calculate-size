@@ -18,3 +18,6 @@ var size = calculateSize("Hello world!", {
 console.log(size.width); // 140
 console.log(size.height); // 20
 ```
+
+## Coming soon
+* Integrated caching

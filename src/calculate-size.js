@@ -15,8 +15,11 @@
   }
 })('calculateSize', function() {
 
-  return function(string, options) {
-    return 1;
+  return function(text, options) {
+    return {
+      width: 35,
+      height: 18
+    };
   };
 
 });
