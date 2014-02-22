@@ -1,0 +1,26 @@
+{
+  "name": "calculate-size",
+  "version": "0.0.0",
+  "description": "Calculate the pixel size of a string",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schickling/calculate-size.git"
+  },
+  "keywords": [
+    "font",
+    "calculate",
+    "size",
+    "width",
+    "height",
+    "dimension"
+  ],
+  "author": "Johannes Schickling <schickling.j@gmail.com> (https://github.com/schickling)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schickling/calculate-size/issues"
+  },
+  "homepage": "https://github.com/schickling/calculate-size"
+}
