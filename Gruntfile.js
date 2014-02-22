@@ -16,9 +16,7 @@ module.exports = function(grunt) {
         options: {
           test: true
         },
-        files: {
-          'test.xml': ['test/*.js']
-        }
+        src: ['test/*.js']
       }
     }
   });
