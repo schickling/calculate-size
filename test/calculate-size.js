@@ -18,6 +18,13 @@ casper.start(url, function() {
   this.test.assertEquals(size.height, 16);
 });
 
+casper.thenOpen(url, function() {
+  casper.test.comment('test two words');
+  var size = this.calculateSize("Hello world!");
+  this.test.assertEquals(size.width, 81);
+  this.test.assertEquals(size.height, 16);
+});
+
 // TODO write test span is invisible
 
 casper.run();
