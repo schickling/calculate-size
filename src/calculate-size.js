@@ -15,11 +15,41 @@
   }
 })('calculateSize', function() {
 
+  function createDummyElement(text, options) {
+    var element = document.createElement('span'),
+      textNode = document.createTextNode(text);
+
+    element.appendChild(textNode);
+
+    element.style.fontFamily = options.font;
+    element.style.fontSize = options.fontSize;
+
+    document.body.appendChild(element);
+
+    return element;
+  }
+
+  function destoryElement(element) {
+    // element.parentNode.removeChild(element);
+  }
+
   return function(text, options) {
-    return {
-      width: 35,
-      height: 18
-    };
+
+    // prepare options
+    options = options || {};
+    options.font = options.font || 'Times';
+    options.fontSize = options.fontSize || '16px';
+
+    var size = {}, element;
+
+    element = createDummyElement(text, options);
+
+    size.width = element.offsetWidth;
+    size.height = element.offsetHeight;
+
+    destoryElement(element);
+
+    return size;
   };
 
 });
