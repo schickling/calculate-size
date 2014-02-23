@@ -45,6 +45,7 @@
     options = options || {};
     options.font = options.font || 'Times';
     options.fontSize = options.fontSize || '16px';
+    options.fontWeight = options.fontWeight || 'normal';
 
     var size = {}, element;
 
