@@ -23,6 +23,7 @@
 
     element.style.fontFamily = options.font;
     element.style.fontSize = options.fontSize;
+    element.style.fontWeight = options.fontWeight;
     element.style.position = 'absolute';
     element.style.visibility = 'hidden';
     element.style.left = '-999px';
