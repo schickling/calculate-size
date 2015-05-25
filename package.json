@@ -1,7 +1,8 @@
 {
   "name": "calculate-size",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Calculate the pixel size of a string",
+  "main": "src/calculate-size.js",
   "scripts": {
     "test": "grunt test"
   },
