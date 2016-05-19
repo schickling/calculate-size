@@ -48,7 +48,7 @@ casper.thenOpen(url, function() {
   var size = this.calculateSize('Hello world!', {
     fontWeight: 'bold'
   });
-  this.test.assertEquals(size.width, 81);
+  this.test.assertEquals(size.width, 84);
   this.test.assertEquals(size.height, 16);
 });
 

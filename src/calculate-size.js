@@ -40,7 +40,15 @@
     element.parentNode.removeChild(element);
   }
 
+  var cache = {}
+
   return function(text, options) {
+
+    var cacheKey = JSON.stringify({ text: text, options: options });
+
+    if (cache[cacheKey]) {
+      return cache[cacheKey];
+    }
 
     // prepare options
     options = options || {};
@@ -56,6 +64,8 @@
     size.height = element.offsetHeight;
 
     destoryElement(element);
+
+    cache[cacheKey] = size;
 
     return size;
   };

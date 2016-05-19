@@ -1,23 +1,22 @@
-calculate-size [![Build Status](https://travis-ci.org/schickling/calculate-size.png?branch=master)](https://travis-ci.org/schickling/calculate-size)
+calculate-size [![Build Status](https://travis-ci.org/schickling/calculate-size.svg?branch=master)](https://travis-ci.org/schickling/calculate-size) [![npm version](https://badge.fury.io/js/calculate-size.svg)](https://badge.fury.io/js/calculate-size)
 ==============
+
+Calculate the pixel size of a string (with integrated caching)
 
 ## Install
 
 ```sh
-$ bower install calculate-size
+$ npm install calculate-size
 ```
 
 ## Usage
 
 ```js
-var size = calculateSize("Hello world!", {
+const size = calculateSize('Hello world!', {
    font: 'Arial',
    fontSize: '12px'
-});
+})
 
-console.log(size.width); // 140
-console.log(size.height); // 20
+console.log(size.width) // 140
+console.log(size.height) // 20
 ```
-
-## Coming soon
-* Integrated caching
