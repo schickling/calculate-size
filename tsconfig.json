@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "pretty": true,
+    "sourceMap": true,
+    "target": "es5",
+    "outDir": "lib",
+    "rootDir": "src",
+    "module": "umd",
+    "declaration": true,
+    "lib": ["dom", "es5", "es2015"]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

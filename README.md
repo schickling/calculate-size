@@ -1,9 +1,11 @@
 calculate-size [![Build Status](https://travis-ci.org/schickling/calculate-size.svg?branch=master)](https://travis-ci.org/schickling/calculate-size) [![npm version](https://badge.fury.io/js/calculate-size.svg)](https://badge.fury.io/js/calculate-size)
 ==============
 
-Calculate the pixel size of a string (with integrated caching)
+Calculate the pixel size (width/height) of a string (with integrated caching)
 
 ## Install
+
+> This package supports Typescript out-of-the-box
 
 ```sh
 $ npm install calculate-size

@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fixture</title>
+  <title>Fixture</title>
 </head>
 <body>
-    <script src="../../src/calculate-size.js"></script>
+  <script src="system.js"></script>
+  <script>
+    // loads /js/main.js
+    SystemJS.import('/lib/index.js').then(module => {
+      window.calculateSize = module.default
+      const el = document.createElement('div')
+      el.setAttribute('id', 'ready')
+      document.body.appendChild(el)
+    })
+  </script>
 </body>
 </html>

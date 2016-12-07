@@ -1,10 +1,13 @@
 {
   "name": "calculate-size",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Calculate the pixel size of a string",
-  "main": "src/calculate-size.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "grunt test"
+    "test": "ava -s test/index.js",
+    "prepublish": "npm run build",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -25,12 +28,9 @@
   },
   "homepage": "https://github.com/schickling/calculate-size",
   "devDependencies": {
-    "casperjs": "~1.1.0-beta3",
-    "grunt": "^1.0.1",
-    "grunt-casper": "~0.3.0",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-connect": "~0.7.0",
-    "load-grunt-tasks": "~0.3.0",
-    "phantomjs": "~1.9.7-1"
+    "ava": "^0.17.0",
+    "express": "^4.14.0",
+    "nightmare": "^2.8.1",
+    "typescript": "^2.0.10"
   }
 }
