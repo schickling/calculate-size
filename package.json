@@ -1,13 +1,13 @@
 {
   "name": "calculate-size",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculate the pixel size of a string",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "ava -s test/index.js",
     "prepublish": "npm run build",
-    "build": "tsc"
+    "build": "rm -rf lib && tsc"
   },
   "repository": {
     "type": "git",
