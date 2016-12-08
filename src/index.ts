@@ -2,12 +2,14 @@ export interface OptionalOptions {
   font?: string
   fontSize?: string
   fontWeight?: string
+  width?: string
 }
 
 interface Options {
   font: string
   fontSize: string
   fontWeight: string
+  width: string
 }
 
 export interface Size {
@@ -28,7 +30,7 @@ function createDummyElement(text: string, options: Options): HTMLElement {
   element.style.visibility = 'hidden'
   element.style.left = '-999px'
   element.style.top = '-999px'
-  element.style.width = 'auto'
+  element.style.width = options.width
   element.style.height = 'auto'
 
   document.body.appendChild(element)
@@ -54,6 +56,7 @@ export default (text: string, options: OptionalOptions = {}): Size => {
   options.font = options.font || 'Times'
   options.fontSize = options.fontSize || '16px'
   options.fontWeight = options.fontWeight || 'normal'
+  options.width = options.width || 'auto'
 
   const element = createDummyElement(text, options as Options)
 

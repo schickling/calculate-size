@@ -1,6 +1,6 @@
 {
   "name": "calculate-size",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Calculate the pixel size of a string",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

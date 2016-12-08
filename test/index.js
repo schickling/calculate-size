@@ -63,3 +63,12 @@ test('bold text', async t => {
   t.is(width, 86)
   t.is(height, 18)
 })
+
+test('with fixed width', async t => {
+  const { width, height } = await calculateSize('This is a very long text with a constraint width', {
+    width: '100px',
+  })
+
+  t.is(width, 100)
+  t.is(height, 72)
+})
