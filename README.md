@@ -19,6 +19,13 @@ const size = calculateSize('Hello world!', {
    fontSize: '12px'
 })
 
+### Options
+
+* `font: string`
+* `fontSize: string`
+* `fontWeight: string`
+* `width: string` (Constraint width by a fixed value to calc height)
+
 console.log(size.width) // 140
 console.log(size.height) // 20
 ```
