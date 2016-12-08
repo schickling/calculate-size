@@ -8,7 +8,6 @@
     "target": "es5",
     "outDir": "lib",
     "rootDir": "src",
-    "module": "umd",
     "declaration": true,
     "lib": ["dom", "es5", "es2015"]
   },
