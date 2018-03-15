@@ -3,6 +3,7 @@ export interface OptionalOptions {
   fontSize?: string
   fontWeight?: string
   width?: string
+  wordBreak?: string
 }
 
 interface Options {
@@ -10,6 +11,7 @@ interface Options {
   fontSize: string
   fontWeight: string
   width: string
+  wordBreak: string
 }
 
 export interface Size {
@@ -32,6 +34,7 @@ function createDummyElement(text: string, options: Options): HTMLElement {
   element.style.top = '-999px'
   element.style.width = options.width
   element.style.height = 'auto'
+  element.style.wordBreak = options.wordBreak
 
   document.body.appendChild(element)
 
@@ -57,6 +60,7 @@ export default (text: string, options: OptionalOptions = {}): Size => {
   options.fontSize = options.fontSize || '16px'
   options.fontWeight = options.fontWeight || 'normal'
   options.width = options.width || 'auto'
+  options.wordBreak = options.wordBreak || 'normal'
 
   const element = createDummyElement(text, options as Options)
 
