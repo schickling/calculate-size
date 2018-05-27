@@ -2,6 +2,7 @@ export interface OptionalOptions {
   font?: string
   fontSize?: string
   fontWeight?: string
+  lineHeight?: string
   width?: string
   wordBreak?: string
 }
@@ -10,6 +11,7 @@ interface Options {
   font: string
   fontSize: string
   fontWeight: string
+  lineHeight: string
   width: string
   wordBreak: string
 }
@@ -28,6 +30,7 @@ function createDummyElement(text: string, options: Options): HTMLElement {
   element.style.fontFamily = options.font
   element.style.fontSize = options.fontSize
   element.style.fontWeight = options.fontWeight
+  element.style.lineHeight = options.lineHeight
   element.style.position = 'absolute'
   element.style.visibility = 'hidden'
   element.style.left = '-999px'
@@ -59,6 +62,7 @@ export default (text: string, options: OptionalOptions = {}): Size => {
   options.font = options.font || 'Times'
   options.fontSize = options.fontSize || '16px'
   options.fontWeight = options.fontWeight || 'normal'
+  options.lineHeight = options.lineHeight || 'normal'
   options.width = options.width || 'auto'
   options.wordBreak = options.wordBreak || 'normal'
 
