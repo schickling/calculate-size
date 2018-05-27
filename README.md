@@ -24,6 +24,7 @@ const size = calculateSize('Hello world!', {
 * `font: string`
 * `fontSize: string`
 * `fontWeight: string`
+* `lineHeight: string`
 * `width: string` (Constraint width by a fixed value to calc height)
 
 console.log(size.width) // 140
