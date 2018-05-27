@@ -48,11 +48,21 @@ test('different font family', async t => {
 
 test('different font size', async t => {
   const { width, height } = await calculateSize('Hello world!', {
-      fontSize: '40px'
+    fontSize: '40px'
   })
 
   t.is(width, 206)
   t.is(height, 46)
+})
+
+test('different line height', async t => {
+  const { width, height } = await calculateSize('Hello world!', {
+    width: '40px',
+    lineHeight: '40px'
+  })
+
+  t.is(width, 40)
+  t.is(height, 80)
 })
 
 test('bold text', async t => {
